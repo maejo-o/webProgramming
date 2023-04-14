@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Fixed Bar
+            Ellipsis
         </title>
         <style>
             .container {
@@ -22,6 +22,14 @@
                 left: 0; top: 50px; bottom: 0;
                 width: 50px;
             }
+            h1, p {
+                width: 300px;
+            }
+            .ellipsis {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         </style>
     </head>
     <body>
@@ -33,5 +41,7 @@
             <p>New et metus vitaw tellus mattis bibnedum.</p>
             <p>Pellentesque hendrerit placerat.</p>
         </div>
+        <h1 class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora odit vero alias optio cumque porro debitis iusto! Distinctio repellendus ipsam consequatur nemo? Sint officia, expedita nobis vel sapiente nam.</h1>
+        <p class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem saepe reiciendis alias dolores iusto dolorem incidunt dignissimos odit, vitae quam maiores aspernatur architecto repudiandae, unde atque aliquam aliquid libero.</p>
     </body>
 </html>
