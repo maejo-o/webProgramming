@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basic</title>
+        <script>
+            function callTenTimes(callback) {
+                for(var i = 0; i < 10; i++) {
+                    callback();
+                }
+            }
+            var callback = function() {
+                alert('function call');
+            };
+            callTenTimes(callback);
+            var 함수 = function() {
+                alert('funtion_01');
+                alert('funtion_02');
+            };
+            alert(typeof(함수) + ' : ' + 'function');
+            var output = 0;
+            for(var i = 0; i <= 100; i++) {
+                output += i;
+            }
+            alert(output);
+        </script>
+    </head>
+    <body></body>
+</html>
