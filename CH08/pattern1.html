@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>패턴1</title>
+        <meta name="viewport" content="user-scable=no, initial-scable=1, maximum-scable=1">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #menu {
+                width: 260px;
+                float: left;
+            }
+            #section {
+                width: 700px;
+                float: right;
+            }
+            li { list-style: none;}
+
+            @media screen and (max-width: 767px) {
+                body { width: auto}
+                #menu {width: auto; float: none; }
+                #section {width: auto; float: none; }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li>MenuA</li>
+                <li>MenuB</li>
+                <li>MenuC</li>
+            </ul>
+        </div>
+        <div id="section">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, expedita cum. Qui ex unde illo dolor et ipsa nihil dicta, veniam sapiente fugit cum, deserunt id eius asperiores. Officia, modi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod corrupti quis odio provident molestiae labore illo cum rerum recusandae itaque nemo quos dolorum, reiciendis ea eligendi dolores ut alias earum.</p>
+        </div>
+    </body>
+</html>
