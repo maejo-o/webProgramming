@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            li > label > input[type=checkbox] {width: 20px; height: 20px; vertical-align: middle; margin: 0 5px 0 0;}
+            li > label > input[type=radio] {width: 20px; height: 20px; vertical-align: middle; margin: 0 5px 0 0; vertical-align: top;}
+          </style>
+    </head>
+    <body>
+        <div style='background-color: lightcoral; width: 350px; padding: 7px 12px 7px 12px'>
+            <div style='font-size: 20px; text-align: center; font-weight: bolder; margin-bottom: 10px;'> * 설문조사 * </div>
+            <div style='background-color: whitesmoke; padding: 12px 12px 12px 12px; margin-top: 5px;'>
+              <div style="font-weight: bolder;">1 문항. 서비스 만족도</div>
+              <div style="list-style: none; margin-top: 7px;">
+              <li><label for="Q1_1"><input type="radio" name="Q1" id="Q1_1" value="만족"> 만족</label></li>
+              <li><label for="Q1_2"><input type="radio" name="Q1" id="Q1_2" value="불만족(직접입력)"> 불만족(직접입력)</label></li>
+              <li><label for="Q1_a"><input type="text" name="Q1" id="Q1_a"></label></li>
+              </div>
+            </div>
+            <div style='background-color: whitesmoke; padding: 12px 12px 12px 12px; margin-top: 5px;'>
+              <div style="font-weight: bolder;">2 문항. 서비스 사용 장소</div>
+              <div style="list-style: none; margin-top: 7px;">
+              <li><label for="Q2_1"><input type="checkbox" name="Q2" id="Q2_1" value="집"> 집</label></li>
+              <li><label for="Q2_2"><input type="checkbox" name="Q2" id="Q2_2" value="회사"> 회사</label></li>
+              <li><label for="Q2_3"><input type="checkbox" name="Q2" id="Q2_3" value="학교"> 학교</label></li>
+              <li><label for="Q2_4"><input type="checkbox" name="Q2" id="Q2_4" value="기타(직접입력)"> 기타(직접입력)</label></li>
+              <li><label for="Q2_a"><input type="text" name="Q2" id="Q2_a"></label></li>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+              <button onclick="ans_chek()" style="font-size: 20px; padding: 7px; width: 30%;"> 제 출 </button>
+            </div>
+          </div>
+    </body>
+</html>
