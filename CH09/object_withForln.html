@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basic</title>
+        <script>
+            var person = {
+                name: 'Jisu',
+                eat: function(food) {
+                    alert(this.name + ' is eating' + food);
+                }
+            };
+
+            person.eat('rice');
+            /*
+            var object = {
+                number: 273,
+                string: 'rintiantta',
+                boolean: true,
+                array: [52, 273, 103, 32],
+                method: function() {
+
+                }
+            };
+            */
+            /*
+            var product = {
+                puroductName: '7D Dried Mango',
+                type: 'sugar',
+                orient: 'mange, sugar, yellow color',
+                origin: 'pillipin'
+            };
+            */
+            // print
+            for (var i in product) {
+                alert(i + ':' + product[i]);
+            }
+        </script>
+    </head>
+</html>
