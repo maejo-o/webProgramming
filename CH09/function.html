@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basic</title>
+        <script>
+            function callTenTimes(callback) {
+                for(var i = 0; i < 10; i++) {
+                    callback();
+                }
+            }
+            callTenTimes(function () {
+                alert('function call');
+            });
+            /*
+            function callTenTimes(callback) {
+                for(var i = 0; i < 10; i++) {
+                    callback();
+                }
+            }
+            var callback = function() {
+                alert('function call');
+            }
+            callTenTimes(callback); */
+            /*
+            var fun = function() { alert('funciotn_A'); };
+            var fun = function() { alert('function_B'); };
+
+            fun();
+            function 함수() {
+                alert('함수_01');
+                alert('함수_02');
+            }; */
+            // alert(typeof(함수) + ':' + 함수);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
