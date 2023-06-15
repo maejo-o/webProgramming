@@ -17,6 +17,7 @@
         .pull-right{float: right;}
     </style>
     <!-- 2. 페이지 구성하기 -->
+
     <style>
         body{
             width: 960px; margin: 0 auto;
@@ -164,8 +165,16 @@
             color: #6C6C6C;
         }
     </style>
-    <script></script>
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $t('.outer-menu-item').hover(function() {
+                $(this).find('.inner-menu').show();
+            }, function() {
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>
 </head>
 <boby>
     <div id="page-wrapper">
@@ -225,7 +234,7 @@
                         <p class="article-date">2019년 02년 14일</p>
                     </div>
                     <div class="article-body">
-                        <img src="http://placehold.it/430*280">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA5MDhfOTYg/MDAxNTk5NTQxMzkxNzcy.i85KWno4JjfLSilMZX73MBQr6vT85cXjpty4MgB9WA0g.E3eg-V2BJv01wShMh36Zpnie3cz5p0PB1fKzvwXTfP4g.JPEG.starry1119/SE-49e7faac-27c0-432c-9a11-832b4ba2b3fa.jpg?type=w800">
                         <br>
                         <br>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolore nobis quidem eius ipsa excepturi. Necessitatibus non commodi accusamus magni velit! Omnis totam praesentium fugit labore aspernatur nihil voluptatibus repellendus.</p>
@@ -239,7 +248,7 @@
                         <p class="article-date">2019년 02월 17일</p>
                     </div>
                     <div class="article-body">
-                        <img src="http://placehold.it/430*280">
+                        <img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA1MjNfNyAg/MDAxNDk1NTA2OTc1OTA0.iTn-25q4qiSuMU8XnPG7Y7Dgev6n6UJWVLZU816V9zYg.9h6dPTXklIlg11otMvujUIVKJ33U66kHw9sm0i6EVoIg.JPEG.zangternet/6A9.jpg?type=w800">
                         <br>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad deleniti nemo possimus. Deserunt id quibusdam suscipit in, quia veritatis soluta aperiam omnis! Cupiditate, quasi amet nesciunt libero nam molestias odit.</p>
                         <br>
