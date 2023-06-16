@@ -175,6 +175,32 @@
             });
         });
     </script>
+    <script>
+        // event connection
+        $(document).ready(function () {
+            // 문서 객체 추가 함수
+            var appendDocument = function() {
+                for(var i = 0; i < 20; i++) {
+                    // 문서 객체 생성
+                    $('<h1>Infinity Scroll</h1').appendTo('body');
+                }
+            };
+            // 초기에 문서 객체를 추가합니다.
+            appendDocument();
+
+            // 이벤트를 연결한다
+            $(window).scroll(function() {
+                // var definition
+                var scrollHeight = $(window).scrollTop() + $(window).height();
+                var documentHeight = $(document).height();
+
+                // Thank you
+                if(scrollHeight == documentHeight) {
+                    appendDocument();
+                }
+            });
+        });
+    </script>
 </head>
 <boby>
     <div id="page-wrapper">
@@ -253,6 +279,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad deleniti nemo possimus. Deserunt id quibusdam suscipit in, quia veritatis soluta aperiam omnis! Cupiditate, quasi amet nesciunt libero nam molestias odit.</p>
                         <br>
                         <p>Proin ut fringilla sapien.</p>
+                        <img id="image">
                     </div>
                 </article>
             </section>
